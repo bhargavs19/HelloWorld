@@ -1,3 +1,4 @@
 # hello-world-servlet
 HelloWorld Servlet example with corresponding Dockerfile
-Testing integration branch
+Working on feature1
+Testing auto build
