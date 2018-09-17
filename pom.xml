@@ -8,7 +8,11 @@
   <name>hello-world-servlet-example Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+
 <reporting>
+
+  <reporting>
+
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -34,9 +38,15 @@
           <sourceEncoding>utf-8</sourceEncoding>
           <minimumTokens>100</minimumTokens>
           <targetJdk>1.6</targetJdk>
+
 	<!--
           <rulesets>
 	    <ruleset>/rulesets/braces.xml</ruleset>
+
+        <!--
+          <rulesets>
+            <ruleset>/rulesets/braces.xml</ruleset>
+
           </rulesets>
           <excludes>
             <exclude>**/*Bean.java</exclude>
@@ -45,32 +55,50 @@
           <excludeRoots>
             <excludeRoot>target/generated-sources/stubs</excludeRoot>
           </excludeRoots>
+
 	-->
+
+        -->
+
         </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
         <version>2.3</version>
+
 	<!--
         <configuration>
           <tags>
             <tag>TODO</tag>
             <tag>&lt;todo</tag>
+
+        <!--
+        <configuration>
+          <tags>
+            <tag>TODO</tag>
+            <tag><todo</tag>
+
             <tag>FIXME</tag>
             <tag>DOCUMENT_ME</tag>
             <tag>NOT_YET_DOCUMENTED</tag>
           </tags>
         </configuration>
-	-->
+
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>3.0.4</version>
+
 	<configuration>
 	  <effort>Max</effort>
 	</configuration>
+
+        <configuration>
+          <effort>Max</effort>
+        </configuration>
+
       </plugin>
     </plugins>
   </reporting>
